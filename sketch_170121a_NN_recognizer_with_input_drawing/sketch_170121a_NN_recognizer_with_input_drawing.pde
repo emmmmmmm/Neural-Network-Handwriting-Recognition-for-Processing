@@ -1,5 +1,5 @@
 /*
-uncomment this for training
+uncomment this Tab for training the Neural Net
 and comment the ATester tab!
 
 */

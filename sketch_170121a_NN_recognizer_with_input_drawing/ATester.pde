@@ -1,4 +1,6 @@
-
+//===============================================
+// takes mouse input, gets result from pre-trained Neural Network!
+//===============================================
 Recognizer p;
 Timer timer;
 boolean testInput = false;
@@ -11,7 +13,7 @@ void setup() {
   size(600, 300);
   frameRate(100000);
   strokeCap(RECT);
-  
+
   importGestures();
   p = new Recognizer();
   timer = new Timer();
@@ -43,7 +45,7 @@ void draw() {
     text(r.Name+" ("+r.Score+")",50, 50);
     frame.setTitle("result: "+r.Name+" ("+r.Score+")");
     id=0;
-    
+
  //   drawAllGestures();
   }
 }
@@ -58,7 +60,7 @@ void mousePressed() {
 }
 //---------------------------------------------------------
 void mouseReleased() {
-  timer.reset(); 
+  timer.reset();
   testInput=true;
   id++;
  // println("id increased to "+id);
@@ -78,4 +80,3 @@ class Timer {
   }
 }
 //---------------------------------------------------------
-
