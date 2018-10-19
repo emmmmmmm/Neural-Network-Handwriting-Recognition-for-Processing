@@ -46,7 +46,7 @@ void draw() {
     frame.setTitle("result: "+r.Name+" ("+r.Score+")");
     id=0;
 
- //   drawAllGestures();
+   // drawAllGestures();
   }
 }
 //---------------------------------------------------------
